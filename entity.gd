@@ -4,9 +4,8 @@ extends CharacterBody2D
 @onready var sprite = $Sprite
 @onready var hurtbox = $Hurtbox
 
-@export var health = 5
-
-var _direction
+var health
+var _direction = Direction.SOUTH
 
 enum Direction {
 	NORTH,
@@ -33,14 +32,14 @@ func poll_direction() -> Direction:
 	var dx = velocity.x
 	var dy = velocity.y
 	return (
-		Direction.SOUTHWEST if (dx < 0 and dy > 0)
-		else Direction.SOUTHEAST if (dx > 0 and dy > 0)
-		else Direction.NORTHWEST if (dx < 0 and dy < 0)
-		else Direction.NORTHEAST if (dx > 0 and dy < 0)
+		Direction.SOUTHWEST if (dx < 0 and dy < 0)
+		else Direction.SOUTHEAST if (dx > 0 and dy < 0)
+		else Direction.NORTHWEST if (dx < 0 and dy > 0)
+		else Direction.NORTHEAST if (dx > 0 and dy > 0)
 		else Direction.WEST if (dx < 0)
 		else Direction.EAST if (dx > 0)
-		else Direction.NORTH if (dy > 0)
-		else Direction.SOUTH if (dy < 0)
+		else Direction.NORTH if (dy < 0)
+		else Direction.SOUTH if (dy > 0)
 		else _direction
 	)
 
