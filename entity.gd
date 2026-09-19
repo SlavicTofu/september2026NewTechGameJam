@@ -1,7 +1,8 @@
 class_name Entity
 extends CharacterBody2D
 
-@onready var animated_sprite2D = $AnimatedSprite2D
+@onready var sprite = $Sprite
+@onready var hurtbox = $Hurtbox
 
 @export var health = 5
 
