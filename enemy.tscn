@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c4wpgl0yjms1w"]
+
+[ext_resource type="Script" uid="uid://fiyo83u11s7t" path="res://entity.gd" id="1_7k104"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_38ypl"]
+
+[node name="Entity" type="CharacterBody2D" unique_id=1794591136]
+script = ExtResource("1_7k104")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=624004939]
+sprite_frames = SubResource("SpriteFrames_38ypl")
