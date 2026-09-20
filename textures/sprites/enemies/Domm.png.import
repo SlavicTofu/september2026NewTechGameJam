@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coyiy8fy4svqe"
-path="res://.godot/imported/Domm.png-a5214c866d5e791ef1b52e3a14aba227.ctex"
+path="res://.godot/imported/domm.png-bfa4b7e5f1d1f6f979b3c6478cc56371.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/sprites/enemies/Domm.png"
-dest_files=["res://.godot/imported/Domm.png-a5214c866d5e791ef1b52e3a14aba227.ctex"]
+source_file="res://textures/sprites/enemies/domm.png"
+dest_files=["res://.godot/imported/domm.png-bfa4b7e5f1d1f6f979b3c6478cc56371.ctex"]
 
 [params]
 

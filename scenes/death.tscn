@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://vbpqq6ey32w3"]
+
+[ext_resource type="Texture2D" uid="uid://c7sb55qc5w4ic" path="res://textures/scenes/death/fuckass_baby.png" id="1_w8wr1"]
+[ext_resource type="Script" uid="uid://b8mmnderjlk03" path="res://scripts/ui/menu_button.gd" id="2_tjai8"]
+
+[node name="Death" type="Node2D" unique_id=1764009191]
+
+[node name="fuckass_baby" type="Sprite2D" parent="." unique_id=1469764870]
+position = Vector2(583.5, 457)
+scale = Vector2(1.1054579, 0.43413728)
+texture = ExtResource("1_w8wr1")
+
+[node name="you_died" type="Label" parent="." unique_id=1092572361]
+offset_left = 26.000002
+offset_top = 8.000008
+offset_right = 200.0
+offset_bottom = 31.000008
+scale = Vector2(2.5109782, 8.234439)
+text = "You died..? Cringe lol..."
+
+[node name="menu_button" type="Button" parent="." unique_id=294641397]
+offset_left = 562.00006
+offset_top = 22.000004
+offset_right = 689.00006
+offset_bottom = 53.000004
+scale = Vector2(4.4246316, 2.729165)
+text = "return to menu"
+script = ExtResource("2_tjai8")
+
+[node name="retry" type="Button" parent="." unique_id=912118066]
+offset_left = 571.0
+offset_top = 126.0
+offset_right = 648.0
+offset_bottom = 157.0
+scale = Vector2(3.5339563, 2.5951774)
+text = "try again"
