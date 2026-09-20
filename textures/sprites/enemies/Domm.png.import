@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt3pq3rjcdxl7"
-path="res://.godot/imported/r1-et.png-8907eb6035950bb4a1ef4d4fd21519e1.ctex"
+uid="uid://coyiy8fy4svqe"
+path="res://.godot/imported/domm.png-bfa4b7e5f1d1f6f979b3c6478cc56371.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/sprites/player/r1-et.png"
-dest_files=["res://.godot/imported/r1-et.png-8907eb6035950bb4a1ef4d4fd21519e1.ctex"]
+source_file="res://textures/sprites/enemies/domm.png"
+dest_files=["res://.godot/imported/domm.png-bfa4b7e5f1d1f6f979b3c6478cc56371.ctex"]
 
 [params]
 

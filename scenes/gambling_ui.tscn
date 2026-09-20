@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://c7ri7s53r0kro"]
+
+[ext_resource type="Texture2D" uid="uid://dj5flprfroia3" path="res://textures/sprites/hud/st-bg.png" id="1_h1yl5"]
+[ext_resource type="Texture2D" uid="uid://cf14ydp0w840a" path="res://textures/sprites/hud/gg-gambling-still.png" id="2_3kv0k"]
+
+[node name="GamblingUI" type="Control" unique_id=1826459863]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=56501917]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 320.0
+offset_bottom = 188.0
+texture = ExtResource("1_h1yl5")
+
+[node name="Gambling" type="TextureRect" parent="." unique_id=32192330]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 20.0
+offset_right = 248.0
+offset_bottom = 160.0
+texture = ExtResource("2_3kv0k")
+
+[node name="SlotOne" type="TextureRect" parent="." unique_id=387093876]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 84.0
+offset_right = 144.0
+offset_bottom = 108.0
+
+[node name="SlotTwo" type="TextureRect" parent="." unique_id=124816167]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 84.0
+offset_right = 176.0
+offset_bottom = 108.0
+
+[node name="SlotThree" type="TextureRect" parent="." unique_id=4788983]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 84.0
+offset_right = 204.0
+offset_bottom = 108.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1787734814]
+position = Vector2(160, 96)
+zoom = Vector2(3.6, 3.6)

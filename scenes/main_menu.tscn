@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dug31fc6jqkp7" path="res://textures/scenes/title_screen/gg_title_sprite.png" id="2_nlkkf"]
 [ext_resource type="Texture2D" uid="uid://dcup4rpx3bckj" path="res://textures/scenes/title_screen/gg_play_sprite.png" id="3_qe12f"]
 [ext_resource type="Texture2D" uid="uid://c6f4fqguwk7jg" path="res://textures/scenes/title_screen/gg_options_sprite.png" id="4_8qtwp"]
+[ext_resource type="Script" uid="uid://glvtg4f8vcaj" path="res://scripts/ui/texture_button.gd" id="4_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://xjfbygbkjai1" path="res://textures/scenes/title_screen/gg_quit_sprite.png" id="5_dy7ct"]
 
 [node name="MainMenu" type="MarginContainer" unique_id=2143655381]
@@ -35,17 +36,24 @@ layout_mode = 2
 theme_override_constants/separation = 55
 alignment = 1
 
-[node name="Play" type="TextureRect" parent="VBoxContainer3/VBoxContainer2" unique_id=983067430]
+[node name="Play" type="TextureButton" parent="VBoxContainer3/VBoxContainer2" unique_id=383359052]
 layout_mode = 2
-texture = ExtResource("3_qe12f")
+texture_normal = ExtResource("3_qe12f")
 stretch_mode = 3
+script = ExtResource("4_rtw2f")
 
-[node name="Options" type="TextureRect" parent="VBoxContainer3/VBoxContainer2" unique_id=228604818]
+[node name="Options" type="TextureButton" parent="VBoxContainer3/VBoxContainer2" unique_id=1886880206]
 layout_mode = 2
-texture = ExtResource("4_8qtwp")
+texture_normal = ExtResource("4_8qtwp")
 stretch_mode = 3
+script = ExtResource("4_rtw2f")
 
-[node name="Quit" type="TextureRect" parent="VBoxContainer3/VBoxContainer2" unique_id=15072776]
+[node name="Quit" type="TextureButton" parent="VBoxContainer3/VBoxContainer2" unique_id=1224469504]
 layout_mode = 2
-texture = ExtResource("5_dy7ct")
+texture_normal = ExtResource("5_dy7ct")
 stretch_mode = 3
+script = ExtResource("4_rtw2f")
+
+[connection signal="pressed" from="VBoxContainer3/VBoxContainer2/Play" to="VBoxContainer3/VBoxContainer2/Play" method="_on_start_game_pressed"]
+[connection signal="pressed" from="VBoxContainer3/VBoxContainer2/Options" to="VBoxContainer3/VBoxContainer2/Play" method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer3/VBoxContainer2/Quit" to="VBoxContainer3/VBoxContainer2/Play" method="_on_exit_game_pressed"]
