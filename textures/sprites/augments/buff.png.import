@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt3pq3rjcdxl7"
-path="res://.godot/imported/R1-ET.png-984b4872c39522829c44ca2bcfbd2e29.ctex"
+uid="uid://bs67t6cps8qas"
+path="res://.godot/imported/buff.png-13bb4eea39822669eb86756392b0e7c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/sprites/player/R1-ET.png"
-dest_files=["res://.godot/imported/R1-ET.png-984b4872c39522829c44ca2bcfbd2e29.ctex"]
+source_file="res://textures/sprites/augments/buff.png"
+dest_files=["res://.godot/imported/buff.png-13bb4eea39822669eb86756392b0e7c4.ctex"]
 
 [params]
 
