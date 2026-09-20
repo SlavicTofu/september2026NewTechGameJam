@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://h48apbxuslia"]
+
+[ext_resource type="Script" uid="uid://bhdutm67j04wl" path="res://augments/basearm.gd" id="1_1e2ep"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgcby"]
+size = Vector2(32, 16)
+
+[node name="Basearm" type="Node" unique_id=855742685]
+script = ExtResource("1_1e2ep")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1758310378]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1676670]
+position = Vector2(8, 0)
+shape = SubResource("RectangleShape2D_vgcby")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1368219819]
