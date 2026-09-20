@@ -1,5 +1,5 @@
-class_name Enemy
 extends Entity
+class_name Enemy
 
 @onready var player : Player = get_tree().get_first_node_in_group("Player")
 

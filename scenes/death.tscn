@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://vbpqq6ey32w3"]
 
 [ext_resource type="Texture2D" uid="uid://c7sb55qc5w4ic" path="res://textures/scenes/death/fuckass_baby.png" id="1_w8wr1"]
-[ext_resource type="Script" uid="uid://b8mmnderjlk03" path="res://scripts/ui/menu_button.gd" id="2_tjai8"]
+[ext_resource type="Script" uid="uid://b8mmnderjlk03" path="res://scripts/ui/button.gd" id="2_tjai8"]
+
+[sub_resource type="GDScript" id="GDScript_w8wr1"]
+script/source = "extends Button
+"
 
 [node name="Death" type="Node2D" unique_id=1764009191]
 
@@ -34,3 +38,7 @@ offset_right = 648.0
 offset_bottom = 157.0
 scale = Vector2(3.5339563, 2.5951774)
 text = "try again"
+script = SubResource("GDScript_w8wr1")
+
+[connection signal="pressed" from="menu_button" to="menu_button" method="_on_menu_pressed"]
+[connection signal="pressed" from="retry" to="menu_button" method="_on_start_game_pressed"]
