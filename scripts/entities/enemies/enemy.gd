@@ -1,7 +1,7 @@
 class_name Enemy
 extends Entity
 
-@onready var player : Entity = get_tree().get_first_node_in_group("Player")
+@onready var player : Player = get_tree().get_first_node_in_group("Player")
 
 @export var attack_damage : int
 @export var follow_distance : float
@@ -14,7 +14,7 @@ func _ready() -> void:
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	move_and_slide()
 	pass
 

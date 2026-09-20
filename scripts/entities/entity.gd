@@ -33,7 +33,7 @@ func _process(_delta: float) -> void:
 func poll_direction() -> Direction:
 	var dx = velocity.x
 	var dy = velocity.y
-	return (
+	_direction = (
 		Direction.SOUTHWEST if (dx < 0 and dy < 0)
 		else Direction.SOUTHEAST if (dx > 0 and dy < 0)
 		else Direction.NORTHWEST if (dx < 0 and dy > 0)
@@ -44,6 +44,7 @@ func poll_direction() -> Direction:
 		else Direction.SOUTH if (dy > 0)
 		else _direction
 	)
+	return _direction
 
 
 func _attack() -> void:

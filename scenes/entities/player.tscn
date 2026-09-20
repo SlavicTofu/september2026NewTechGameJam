@@ -1,39 +1,38 @@
 [gd_scene format=3 uid="uid://dvut8e8xfxfyo"]
 
-[ext_resource type="Script" uid="uid://bwf06kg2csafq" path="res://player/scripts/player.gd" id="1_4flbx"]
-[ext_resource type="Texture2D" uid="uid://dpc8mxvpylc5m" path="res://R1-ET.png" id="2_onrkg"]
-[ext_resource type="Script" uid="uid://nfgwif8xbsrw" path="res://player/scripts/hurtbox.gd" id="3_i3pqv"]
+[ext_resource type="Script" uid="uid://bwf06kg2csafq" path="res://scripts/entities/player.gd" id="1_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://dpc8mxvpylc5m" path="res://textures/sprites/player/R1-ET.png" id="2_08t41"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
-atlas = ExtResource("2_onrkg")
+atlas = ExtResource("2_08t41")
 region = Rect2(0, 0, 19, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
-atlas = ExtResource("2_onrkg")
+atlas = ExtResource("2_08t41")
 region = Rect2(19, 0, 19, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
-atlas = ExtResource("2_onrkg")
+atlas = ExtResource("2_08t41")
 region = Rect2(0, 102, 19, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2hs0m"]
-atlas = ExtResource("2_onrkg")
+atlas = ExtResource("2_08t41")
 region = Rect2(19, 102, 19, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jxqw"]
-atlas = ExtResource("2_onrkg")
+atlas = ExtResource("2_08t41")
 region = Rect2(0, 34, 19, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dw050"]
-atlas = ExtResource("2_onrkg")
+atlas = ExtResource("2_08t41")
 region = Rect2(19, 34, 19, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b26j0"]
-atlas = ExtResource("2_onrkg")
+atlas = ExtResource("2_08t41")
 region = Rect2(0, 68, 19, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
-atlas = ExtResource("2_onrkg")
+atlas = ExtResource("2_08t41")
 region = Rect2(19, 68, 19, 34)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mwy8p"]
@@ -84,30 +83,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
-size = Vector2(80, 176)
+size = Vector2(15, 23)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwy8p"]
-size = Vector2(84, 184)
-
-[node name="player" type="CharacterBody2D" unique_id=2136472901]
-position = Vector2(-2, 0)
-script = ExtResource("1_4flbx")
+[node name="Player" type="CharacterBody2D" unique_id=2136472901 groups=["Player"]]
+script = ExtResource("1_qhqgy")
 
 [node name="cooldown" type="Timer" parent="." unique_id=1831477847]
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=884772009]
 position = Vector2(0, -7.450581e-09)
-scale = Vector2(7.5, 5.75)
+scale = Vector2(1, 0.767)
 sprite_frames = SubResource("SpriteFrames_mwy8p")
 animation = &"left"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=47889411]
-position = Vector2(2, 8)
+[node name="Hurtbox" type="CollisionShape2D" parent="." unique_id=47889411]
+position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_i3pqv")
-
-[node name="Hurtbox" type="Area2D" parent="." unique_id=737522518]
-script = ExtResource("3_i3pqv")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1820419727]
-position = Vector2(2, 8)
-shape = SubResource("RectangleShape2D_mwy8p")

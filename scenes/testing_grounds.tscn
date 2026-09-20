@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dfpakmpsmlj7y"]
+
+[ext_resource type="PackedScene" uid="uid://dvut8e8xfxfyo" path="res://scenes/entities/player.tscn" id="1_j18ga"]
+[ext_resource type="PackedScene" uid="uid://c4wpgl0yjms1w" path="res://scenes/entities/enemy.tscn" id="2_xb7la"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0e48y"]
+
+[node name="Node2D" type="Node2D" unique_id=1364167226]
+material = SubResource("CanvasItemMaterial_0e48y")
+
+[node name="player" parent="." unique_id=2136472901 instance=ExtResource("1_j18ga")]
+move_speed = 30.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=674161213]
+zoom = Vector2(3.62, 3.62)
+
+[node name="Enemy" parent="." unique_id=410018827 instance=ExtResource("2_xb7la")]
+position = Vector2(-61, 8)
+move_speed = 20.0

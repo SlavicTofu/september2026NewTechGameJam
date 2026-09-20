@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://c4wpgl0yjms1w"]
 
-[ext_resource type="Script" uid="uid://brpmv6bn2bwqx" path="res://scripts/entities/entity.gd" id="1_nenq2"]
 [ext_resource type="Texture2D" uid="uid://biagldhh6tv68" path="res://textures/sprites/enemies/enemy_placeholder.png" id="2_md484"]
 [ext_resource type="Script" uid="uid://b3wjjc6awcp3x" path="res://scripts/entities/enemies/enemy.gd" id="3_ipns3"]
 [ext_resource type="Script" uid="uid://dsa145tlq3ygg" path="res://scripts/states/state_machine.gd" id="4_8qclf"]
@@ -19,48 +18,32 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node" type="Node" unique_id=1684934191]
-
-[node name="Player Placeholder" type="CharacterBody2D" parent="." unique_id=364098098 groups=["Player"]]
-position = Vector2(218, 114)
-script = ExtResource("1_nenq2")
-health = 4
-move_speed = 3.0
-
-[node name="Sprite" type="AnimatedSprite2D" parent="Player Placeholder" unique_id=1936384400]
-sprite_frames = SubResource("SpriteFrames_epg4t")
-
-[node name="Hurtbox" type="CollisionPolygon2D" parent="Player Placeholder" unique_id=859910672]
-polygon = PackedVector2Array(8, -8, -8, -8, -8, 8, 8, 8)
-
-[node name="Enemy" type="CharacterBody2D" parent="." unique_id=410018827 groups=["Enemies"]]
-position = Vector2(511, 312)
+[node name="Enemy" type="CharacterBody2D" unique_id=410018827 groups=["Enemies"]]
 script = ExtResource("3_ipns3")
 attack_damage = 1
 follow_distance = 100.0
 attack_distance = 20.0
 wander_interval = 6.0
 health = 3
-move_speed = 40.0
 
-[node name="Hurtbox" type="CollisionPolygon2D" parent="Enemy" unique_id=528195343]
+[node name="Hurtbox" type="CollisionPolygon2D" parent="." unique_id=528195343]
 polygon = PackedVector2Array(8, -8, -8, -8, -8, 8, 8, 8)
 
-[node name="Sprite" type="AnimatedSprite2D" parent="Enemy" unique_id=519020234]
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=519020234]
 sprite_frames = SubResource("SpriteFrames_epg4t")
 
-[node name="StateMachine" type="Node" parent="Enemy" unique_id=1573641384 node_paths=PackedStringArray("initial_state")]
+[node name="StateMachine" type="Node" parent="." unique_id=1573641384 node_paths=PackedStringArray("initial_state")]
 script = ExtResource("4_8qclf")
 initial_state = NodePath("Wander")
 
-[node name="Attack" type="Node" parent="Enemy/StateMachine" unique_id=850498355 node_paths=PackedStringArray("enemy")]
+[node name="Attack" type="Node" parent="StateMachine" unique_id=850498355 node_paths=PackedStringArray("enemy")]
 script = ExtResource("5_w8i8w")
 enemy = NodePath("../..")
 
-[node name="Wander" type="Node" parent="Enemy/StateMachine" unique_id=1520941253 node_paths=PackedStringArray("enemy")]
+[node name="Wander" type="Node" parent="StateMachine" unique_id=1520941253 node_paths=PackedStringArray("enemy")]
 script = ExtResource("6_otmr2")
 enemy = NodePath("../..")
 
-[node name="Follow" type="Node" parent="Enemy/StateMachine" unique_id=1234696574 node_paths=PackedStringArray("enemy")]
+[node name="Follow" type="Node" parent="StateMachine" unique_id=1234696574 node_paths=PackedStringArray("enemy")]
 script = ExtResource("7_wtq4b")
 enemy = NodePath("../..")

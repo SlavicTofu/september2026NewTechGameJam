@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dfhytlr723u1h"]
 
-[ext_resource type="Script" uid="uid://c6u5wo56tk0go" path="res://bigarm.gd" id="1_li6tf"]
+[ext_resource type="Script" uid="uid://c6u5wo56tk0go" path="res://scripts/augments/big_arm.gd" id="1_li6tf"]
 
 [node name="Bigarm" type="Node" unique_id=1000748029]
 script = ExtResource("1_li6tf")

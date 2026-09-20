@@ -1,15 +1,14 @@
 extends Entity
-
+class_name Player
 
 var weapon: Node
-@export var speed = 200
 
 func get_input():
 	var input_direction = Input.get_vector("left", "right", "up", "down")
-	velocity = input_direction * speed
+	velocity = input_direction * move_speed
 	print(velocity)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	get_input()
 	match poll_direction():
 		Direction.NORTH: sprite.animation  = "up"
@@ -30,8 +29,6 @@ func _physics_process(delta):
 func take_damage():
 	pass
 	
+	
 func attack():
 	weapon.attack()
-	
-	
-	
