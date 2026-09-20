@@ -11,8 +11,10 @@ config_version=5
 [application]
 
 config/name="September 2026 New Tech Game Jam"
+run/main_scene="uid://pid5mhb8qlxm"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<<Updatedupstreamrun/main_scene="uid://dfpakmpsmlj7y"
 
 [display]
 

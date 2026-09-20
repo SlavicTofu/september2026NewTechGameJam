@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://pid5mhb8qlxm"]
 
-[ext_resource type="Texture2D" uid="uid://dl6fea4d35yix" path="res://scenes/sprites/gg_title_screen_background.png" id="1_glbon"]
-[ext_resource type="Texture2D" uid="uid://dug31fc6jqkp7" path="res://scenes/sprites/gg_title_sprite.png" id="2_nlkkf"]
-[ext_resource type="Texture2D" uid="uid://dcup4rpx3bckj" path="res://scenes/sprites/gg_play_sprite.png" id="3_qe12f"]
-[ext_resource type="Texture2D" uid="uid://c6f4fqguwk7jg" path="res://scenes/sprites/gg_options_sprite.png" id="4_8qtwp"]
-[ext_resource type="Texture2D" uid="uid://xjfbygbkjai1" path="res://scenes/sprites/gg_quit_sprite.png" id="5_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://dl6fea4d35yix" path="res://textures/scenes/title_screen/gg_title_screen_background.png" id="1_glbon"]
+[ext_resource type="Texture2D" uid="uid://dug31fc6jqkp7" path="res://textures/scenes/title_screen/gg_title_sprite.png" id="2_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://dcup4rpx3bckj" path="res://textures/scenes/title_screen/gg_play_sprite.png" id="3_qe12f"]
+[ext_resource type="Texture2D" uid="uid://c6f4fqguwk7jg" path="res://textures/scenes/title_screen/gg_options_sprite.png" id="4_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://xjfbygbkjai1" path="res://textures/scenes/title_screen/gg_quit_sprite.png" id="5_dy7ct"]
 
 [node name="MainMenu" type="MarginContainer" unique_id=2143655381]
 anchors_preset = 15

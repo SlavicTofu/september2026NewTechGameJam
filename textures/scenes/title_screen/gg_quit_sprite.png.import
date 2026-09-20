@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xjfbygbkjai1"
-path="res://.godot/imported/gg_quit_sprite.png-912d1aa7861d9d24498e98b9b496947d.ctex"
+path="res://.godot/imported/gg_quit_sprite.png-08aa38919e8bb14d94bf5f9708942463.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/sprites/gg_quit_sprite.png"
-dest_files=["res://.godot/imported/gg_quit_sprite.png-912d1aa7861d9d24498e98b9b496947d.ctex"]
+source_file="res://textures/scenes/title_screen/gg_quit_sprite.png"
+dest_files=["res://.godot/imported/gg_quit_sprite.png-08aa38919e8bb14d94bf5f9708942463.ctex"]
 
 [params]
 
