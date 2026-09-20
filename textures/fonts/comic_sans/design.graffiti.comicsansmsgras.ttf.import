@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://da712eq2g2mo6"
-path="res://.godot/imported/ComicSansMS3.ttf-2d98e463c375aff5ebfc9fdda8f70945.fontdata"
+uid="uid://dncvi5u4mduxc"
+path="res://.godot/imported/design.graffiti.comicsansmsgras.ttf-9861b0c1b9d3714b9b88293bf3258a31.fontdata"
 
 [deps]
 
-source_file="res://textures/fonts/comic-sans-ms-font-family/ComicSansMS3.ttf"
-dest_files=["res://.godot/imported/ComicSansMS3.ttf-2d98e463c375aff5ebfc9fdda8f70945.fontdata"]
+source_file="res://textures/fonts/comic_sans/design.graffiti.comicsansmsgras.ttf"
+dest_files=["res://.godot/imported/design.graffiti.comicsansmsgras.ttf-9861b0c1b9d3714b9b88293bf3258a31.fontdata"]
 
 [params]
 

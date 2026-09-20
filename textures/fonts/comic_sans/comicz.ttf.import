@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://besamf132qpdv"
-path="res://.godot/imported/comici.ttf-ecdd16b0e80dbb734a9fbab6f3de100e.fontdata"
+uid="uid://csycfqhqy0jn"
+path="res://.godot/imported/comicz.ttf-1d37765e99b32a3245d5ef9004bf0c32.fontdata"
 
 [deps]
 
-source_file="res://textures/fonts/comic-sans-ms-font-family/comici.ttf"
-dest_files=["res://.godot/imported/comici.ttf-ecdd16b0e80dbb734a9fbab6f3de100e.fontdata"]
+source_file="res://textures/fonts/comic_sans/comicz.ttf"
+dest_files=["res://.godot/imported/comicz.ttf-1d37765e99b32a3245d5ef9004bf0c32.fontdata"]
 
 [params]
 
