@@ -1,6 +1,8 @@
 extends Entity
 class_name Player
 
+signal playerHasDied
+
 var weapon: Node
 
 func get_input():
