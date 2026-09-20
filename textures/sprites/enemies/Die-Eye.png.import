@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6pft4e3l20k8"
-path="res://.godot/imported/die-eye.png-e86aea327f9fc51a672eb7c254c3d3fc.ctex"
+path="res://.godot/imported/Die-Eye.png-09d2d15f2d1b64c2b92ab6519e4d56b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/sprites/enemies/die-eye.png"
-dest_files=["res://.godot/imported/die-eye.png-e86aea327f9fc51a672eb7c254c3d3fc.ctex"]
+source_file="res://textures/sprites/enemies/Die-Eye.png"
+dest_files=["res://.godot/imported/Die-Eye.png-09d2d15f2d1b64c2b92ab6519e4d56b6.ctex"]
 
 [params]
 
