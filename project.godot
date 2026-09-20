@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="September 2026 New Tech Game Jam"
+<<<<<<< Updated upstream
 run/main_scene="uid://dfpakmpsmlj7y"
+=======
+run/main_scene="uid://pid5mhb8qlxm"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
