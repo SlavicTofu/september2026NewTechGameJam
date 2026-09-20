@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://beyfviikcg3em"]
+
+[ext_resource type="FontFile" uid="uid://qb5bnrpuuevl" path="res://textures/fonts/comic-sans-ms-font-family/COMIC.TTF" id="1_l80cy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nos40"]
+font = ExtResource("1_l80cy")
+font_size = 8
+
+[node name="Container" type="Control" unique_id=1958553280]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Label" type="Label" parent="." unique_id=1692925595]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 16.0
+offset_right = 48.0
+offset_bottom = 39.0
+text = "Wave:"
+label_settings = SubResource("LabelSettings_nos40")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=1965161158]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 88.0
+offset_bottom = 39.0
+text = "0"
+label_settings = SubResource("LabelSettings_nos40")
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1303005714]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 16.0
+offset_right = 304.0
+offset_bottom = 39.0
+text = "Score:"
+label_settings = SubResource("LabelSettings_nos40")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=69397022]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 16.0
+offset_right = 344.0
+offset_bottom = 39.0
+text = "0"
+label_settings = SubResource("LabelSettings_nos40")
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1756833281]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 136.0
+offset_right = 56.0
+offset_bottom = 176.0
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1590568189]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 136.0
+offset_right = 320.0
+offset_bottom = 176.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=599591814]
+position = Vector2(168, 96)
+zoom = Vector2(3.6, 3.6)
