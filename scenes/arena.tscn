@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://da1exlyal0ndl"]
 
-[ext_resource type="Texture2D" uid="uid://dwng4jhn2qaos" path="res://scenes/sprites/gg-tilemap-full.png" id="1_31wwa"]
+[ext_resource type="Texture2D" uid="uid://dwng4jhn2qaos" path="res://textures/scenes/arena/arena_tilemap.png" id="1_e05a3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qr2ne"]
-texture = ExtResource("1_31wwa")
+texture = ExtResource("1_e05a3")
 texture_region_size = Vector2i(32, 32)
 0:0/animation_columns = 2
 0:0/animation_frame_0/duration = 2.0

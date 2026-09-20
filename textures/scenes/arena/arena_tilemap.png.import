@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwng4jhn2qaos"
-path="res://.godot/imported/gg-tilemap-full.png-4669bd5280be05bf4bec977864870be1.ctex"
+path="res://.godot/imported/arena_tilemap.png-fef8ca0a341860025b4e8907983bec02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/sprites/gg-tilemap-full.png"
-dest_files=["res://.godot/imported/gg-tilemap-full.png-4669bd5280be05bf4bec977864870be1.ctex"]
+source_file="res://textures/scenes/arena/arena_tilemap.png"
+dest_files=["res://.godot/imported/arena_tilemap.png-fef8ca0a341860025b4e8907983bec02.ctex"]
 
 [params]
 
