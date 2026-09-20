@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://c015aorv4x6v8"]
+
+[ext_resource type="FontFile" uid="uid://cv26bwtkx0im3" path="res://textures/fonts/comic-sans-ms-font-family/COMIC.TTF" id="1_liyum"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_175ys"]
+font = ExtResource("1_liyum")
+
+[node name="OptionsMenu" type="Control" unique_id=1648712951]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1758583533]
+layout_mode = 0
+offset_top = -8.0
+offset_right = 320.0
+offset_bottom = 184.0
+
+[node name="Button" type="Button" parent="." unique_id=161621125]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 100.0
+offset_right = 224.0
+offset_bottom = 132.0
+
+[node name="HSlider" type="HSlider" parent="." unique_id=683544608]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 64.0
+offset_right = 224.0
+offset_bottom = 80.0
+
+[node name="Label" type="Label" parent="." unique_id=880330742]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 192.0
+offset_bottom = 55.0
+text = "Volume"
+label_settings = SubResource("LabelSettings_175ys")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=2015164379]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 104.0
+offset_right = 224.0
+offset_bottom = 127.0
+text = "Return to Menu"
+label_settings = SubResource("LabelSettings_175ys")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=14872908]
+position = Vector2(160, 88)
+zoom = Vector2(3.6, 3.6)
