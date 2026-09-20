@@ -4,7 +4,9 @@ extends CharacterBody2D
 @onready var sprite = $Sprite
 @onready var hurtbox = $Hurtbox
 
-var health
+@export var health : int
+@export var move_speed : float
+
 var _direction = Direction.SOUTH
 
 enum Direction {
@@ -44,9 +46,5 @@ func poll_direction() -> Direction:
 	)
 
 
-func _move() -> void:
-	pass # STUB: Virtual function.
-	
-	
 func _attack() -> void:
 	pass # STUB: Virtual function

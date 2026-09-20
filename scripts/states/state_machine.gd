@@ -35,8 +35,8 @@ func on_child_transition(state, new_state_name) -> void:
 		return
 		
 	if current_state:
-		current_state.exit()
+		current_state._exit()
 		
-	new_state.enter()
+	new_state._enter()
 	
 	current_state = new_state
